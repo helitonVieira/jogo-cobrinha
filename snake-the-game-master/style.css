@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+:root{/*variaveis quando vai usar varias vezes no codigo*/
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{ /*definição para inicializar sem espações*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;/*não deixar que passe estore o tamanho*/
+}
+
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color:white;
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ #level{
+    display:flex;
+    align-items: center;/*alinhar ao centro*/
+    justify-content: space-between;/*distancia entre elementos */
+ }
+
+ .level #level1 {
+    align-items: center;
+    font-size: 60px;
+    color: yellow;
+    
+ }
+
+
+ #level #button{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    align-items: flex-end;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(118, 207, 133);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  
+} 
+
+#tela{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
